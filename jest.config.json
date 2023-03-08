@@ -1,0 +1,25 @@
+{
+  "preset": "ts-jest/presets/default-esm",
+  "moduleFileExtensions": ["js", "jsx", "ts", "tsx", "json", "jsonld"],
+  "collectCoverage": false,
+  "collectCoverageFrom": [
+  ],
+  "coverageReporters": ["text", "lcov", "json"],
+  "coverageDirectory": "./coverage",
+  "coverageProvider": "v8", 
+  "transform": {
+  },
+  "testMatch": ["**/__tests__/**/*.test.*"],
+  "globals": {
+    "ts-jest": {
+      "useESM": true,
+      "tsconfig": "./tsconfig.json"
+    }
+  },
+  "moduleNameMapper": {
+    "^(\\.{1,2}/.*)\\.js$": "$1"
+  },
+  "testEnvironment": "node",
+  "automock": false,
+  "setupFiles": ["./setupJest.js"]
+}
